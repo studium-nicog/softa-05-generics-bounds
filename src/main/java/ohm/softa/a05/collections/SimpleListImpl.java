@@ -1,4 +1,4 @@
-package de.thro.inf.prg3.a05.collections;
+package ohm.softa.a05.collections;
 
 import java.util.Iterator;
 
