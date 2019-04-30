@@ -1,8 +1,6 @@
 _This is an assignment to the [Software Architecture](https://ohm-softa.github.io) class at the [Technische Hochschule Nürnberg](http://www.th-nuernberg.de)._
 
 # Assignment 5: Generics and Bounds
-[![Travis CI](https://travis-ci.org/hsro-inf-prg3/05-generic-bounds.svg?branch=musterloesung)](https://travis-ci.org/hsro-inf-prg3/05-generic-bounds)
-
 
 This assignment covers an advanced topic of generics: bounds on type parameters and wildcards.
 Bounds describe type constraints of generic classes or methods that allow to balance type safety with flexibility of use.

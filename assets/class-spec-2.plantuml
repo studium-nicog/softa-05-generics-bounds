@@ -1,5 +1,5 @@
 @startuml
-package de.thro.inf.prg3.a05 {
+package ohm.softa.a05 {
 
     +class PlantBed<T> {
         -plants: SimpleList<T>
