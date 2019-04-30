@@ -6,7 +6,7 @@ package java.lang {
     }
 }
 
-package de.thro.inf.prg3.a05.model {
+package ohm.softa.a05.model {
         +enum PlantColor {
             GREEN,
             YELLOW,
