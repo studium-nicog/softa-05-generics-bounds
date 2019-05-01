@@ -66,7 +66,10 @@ public interface SimpleList<T> extends Iterable<T> {
 	 * @return
 	 */
 	@SuppressWarnings("unchecked")
-	default <R> SimpleList<R> map(Function<? super T,? extends R> transform) {
+
+	// For Function, PECS means: the input T is consumer (hence super),
+	// the output R is the producer (hence extends).
+	default <R> SimpleList<R> map(Function<? super T, ? extends R> transform) {
 		SimpleList<R> result;
 		try {
 			result = (SimpleList<R>) getClass().newInstance();

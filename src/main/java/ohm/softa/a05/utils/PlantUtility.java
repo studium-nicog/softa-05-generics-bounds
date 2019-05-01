@@ -35,7 +35,8 @@ public abstract class PlantUtility {
 	}
 
 	//shortest variant
-	public static <T extends Plant> Map<PlantColor, SimpleList<? extends T>> splitBedByColor2(PlantBed<? extends T> plantBed) {
+	public static <T extends Plant> Map<PlantColor, SimpleList<? extends T>>
+			splitBedByColor2(PlantBed<? extends T> plantBed) {
 		Map<PlantColor, SimpleList<? extends T>> result = new HashMap<>();
 		/* iterate the enum values */
 		for (PlantColor color : PlantColor.values()) {
