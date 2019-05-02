@@ -23,7 +23,10 @@ First, create the model for this assigment:
 1. Create the `enum` _PlantColor_
 2. Implement the `abstract` class _Plant_
 3. Implement the child classes _Flower_ and _Shrub_<br>
-    _Remarks:_ A shrub is always green; a flower may be any color but green (handle a wrong value in the constructor)
+    _Remarks:_
+    - A shrub is always green; a flower may be any color but green (handle a wrong value in the constructor)
+    - Flowers compare to each other by height
+    - All good data classes should always implement `equals` and `hashCode`, ideally also `toString`.
 4. Create tests to ensure that your model classes are correct (e.g. green flowers won't work)
 
 
