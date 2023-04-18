@@ -60,6 +60,6 @@ class PlantUtilityTests {
 
 		PlantUtility.repot(flowerBed, PlantColor.YELLOW, output1);
 		PlantUtility.repot(flowerBed, PlantColor.YELLOW, output2);
-		// PlantUtility.repot(flowerBed, PlantColor.YELLOW, output3); Das klappt nicht!
+		// PlantUtility.repot(flowerBed, PlantColor.YELLOW, output3); // Das klappt nicht!
 	}
 }

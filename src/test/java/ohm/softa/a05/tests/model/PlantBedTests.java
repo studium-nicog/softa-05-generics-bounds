@@ -30,7 +30,6 @@ class PlantBedTests {
 		flowerBed.add(new Flower("Rosa", "Golden Celebration", 0.35, PlantColor.YELLOW));
 		flowerBed.add(new Flower("Rosa", "Abracadabra", 0.35, PlantColor.RED));
 		flowerBed.add(new Flower("Rosa", "Rosa chinensis", 0.35, PlantColor.ORANGE));
-		flowerBed.add(new Flower("Tulip", "Curly Sue", 0.35, PlantColor.VIOLETTE));
 
 		shrubBed.add(new Shrub("Buxus", "Buxus sempervirens", 1.5));
 		shrubBed.add(new Shrub("Buxus", "Buxus sempervirens", 1.1));

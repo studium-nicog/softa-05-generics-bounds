@@ -32,4 +32,8 @@ public class PlantBed<T extends Plant> {
 		//hack to get a copy of the current list
 		return plants.map(p -> p);
 	}
+
+	public void remove(T p) {
+		// ....
+	}
 }
