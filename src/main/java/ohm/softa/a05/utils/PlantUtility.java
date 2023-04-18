@@ -45,4 +45,13 @@ public abstract class PlantUtility {
 		}
 		return result;
 	}
+
+	public static <T extends Plant> void repot(PlantBed<? extends T> input, PlantColor color,
+            PlantBed<? super T> output) {
+
+		SimpleList<? extends T> extract = input.getPlantsByColor(color);
+
+		for (T p : extract)
+			output.add(p);
+	}
 }

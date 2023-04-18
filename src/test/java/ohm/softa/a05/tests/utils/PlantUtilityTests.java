@@ -1,9 +1,7 @@
 package ohm.softa.a05.tests.utils;
 
 import ohm.softa.a05.collections.SimpleList;
-import ohm.softa.a05.model.Flower;
-import ohm.softa.a05.model.PlantBed;
-import ohm.softa.a05.model.PlantColor;
+import ohm.softa.a05.model.*;
 import ohm.softa.a05.utils.PlantUtility;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -30,7 +28,6 @@ class PlantUtilityTests {
 		flowerBed.add(new Flower("Rosa", "Golden Celebration", 0.35, PlantColor.YELLOW));
 		flowerBed.add(new Flower("Rosa", "Abracadabra", 0.35, PlantColor.RED));
 		flowerBed.add(new Flower("Rosa", "Rosa chinensis", 0.35, PlantColor.ORANGE));
-		flowerBed.add(new Flower("Tulip", "Curly Sue", 0.35, PlantColor.VIOLETTE));
 	}
 
 	@Test
@@ -53,5 +50,16 @@ class PlantUtilityTests {
 		for (Flower f : split.get(PlantColor.YELLOW)) {
 			assertEquals(PlantColor.YELLOW, f.getColor());
 		}
+	}
+
+	@Test
+	void testRepot1() {
+		PlantBed<Plant> output1 = new PlantBed<>();
+		PlantBed<Flower> output2 = new PlantBed<>();
+		// PlantBed<Shrub> output3 = new PlantBed<>();
+
+		PlantUtility.repot(flowerBed, PlantColor.YELLOW, output1);
+		PlantUtility.repot(flowerBed, PlantColor.YELLOW, output2);
+		// PlantUtility.repot(flowerBed, PlantColor.YELLOW, output3); Das klappt nicht!
 	}
 }
