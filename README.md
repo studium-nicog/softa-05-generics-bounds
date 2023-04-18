@@ -49,8 +49,11 @@ Last but not least we'll look at the PECS (**P**roducer **E**xtends **C**onsumer
 
 ![Utils spec](./assets/class-spec-3.svg)
 
-1. Modify the `map` method of the `SimpleList` interface according to the PECS principle
-2. Implement the utility method `splitBedByColor` in a utility class `PlantBedUtility`.
+Implement a method `repot` that removes plants from one bed and inserts it in another.
+Make sure that you can repot from a flower bed to a plant bed, but not vice versa.
+
+1. Add a `remove` function to `PlantBed`
+2. Implement the utility method `repot` in a utility class `PlantBedUtility`, use the appropriate bounds.
 	Why should this class be declared `abstract` and have a `private` constructor?
 
 _Remark:_ the above UML diagram for the utility method does not include any bounds but you **need** some (PECS!) -- the compiler is unable to capture the types if you implement the method strictly as described in the UML!
