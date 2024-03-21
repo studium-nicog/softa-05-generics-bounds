@@ -78,4 +78,6 @@ public interface SimpleList<T> extends Iterable<T> {
 		}
 		return result;
 	}
+
+	void remove(T item);
 }

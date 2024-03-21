@@ -49,6 +49,26 @@ public class SimpleListImpl<T> implements SimpleList<T> {
 		return size;
 	}
 
+	@Override
+	public void remove(T item) {
+		if (head != null) {
+			if (head.equals(item)) {
+				head = null;
+			} else {
+				ListElement<T> current = head;
+				while (current.getNext() != null) {
+					if (current.getNext().equals(item)) {
+						current.next = current.getNext().getNext();
+					}
+
+					current = current.getNext();
+				}
+			}
+
+			size--;
+		}
+	}
+
 	/**
 	 * Create a new iterator
 	 */

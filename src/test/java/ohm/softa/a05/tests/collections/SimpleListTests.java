@@ -45,6 +45,22 @@ class SimpleListTests {
 	}
 
 	@Test
+	void testRemoveElements(){
+		logger.info("Testing if removing and iterating elements is implemented correctly");
+		var itemToDelete = Integer.valueOf(4);
+		testList.add(itemToDelete);
+		testList.add(itemToDelete);
+		testList.add(itemToDelete);
+		testList.add(itemToDelete);
+
+		assertEquals(9, testList.size());
+
+		testList.remove(itemToDelete);
+
+		assertEquals(5, testList.size());
+	}
+
+	@Test
 	void testSize(){
 		logger.info("Testing if size() method is implemented correctly");
 		assertEquals(5, testList.size());
